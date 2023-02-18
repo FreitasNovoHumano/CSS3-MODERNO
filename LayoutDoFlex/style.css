@@ -6,6 +6,20 @@
 .container {
   background-color: darkgray;
   min-height: 100vh;
+  display: flex;
+  gap: 0px 15px; /*opx se aplica as colunas, 15px se aplica a linha*/
+  justify-content: center; /*alinha os intens ao centro horizontalmente*/
+  align-items: center; /*alinha no centro do conteiner*/
+  flex-wrap: wrap; /*quebra os itens deacordo com a tela*/
+  /*justify-content: space-around; /*cria espaçamentos entre os itens*/
+  /*justify-content: space-between; /*deixa os itens o mais separados possível*/
+  /*justify-content: space-evenly; /*deixa o espaçamento iguais entre os itens*/
+  /* flex-direction: column-reverse; /*inverte os itens e a fixão*/
+  /*flex-direction: row; /*padrão*/
+  /*flex-direction: row-reverse; /*inverte os intens e fixão*/
+  /*flex-direction: column;
+  row-gap: 15px; /*espaçamento entre os itens*/
+  /*column-gap: 15px; /*espaçamento entre os itens em coluna*/
 }
 .item {
   width: 200px;
@@ -13,4 +27,7 @@
   border: 2px solid black;
   background-color: white;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
