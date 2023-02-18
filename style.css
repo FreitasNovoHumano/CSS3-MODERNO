@@ -22,7 +22,8 @@
   }
 }
 @media (max-width: 410px) {
-  .text-content {
+  .text-content,
+  .title-content {
     text-align: center;
   }
 }
