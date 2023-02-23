@@ -5,42 +5,58 @@
 }
 .container {
   background-color: darkgray;
-  min-height: 100vh;
+  min-height: 100vh; /*altura minima do container*/
   display: flex;
-  gap: 0px 15px; /*opx se aplica as colunas, 15px se aplica a linha*/
+  gap: 15px; /*opx se aplica as colunas, 15px se aplica a linha*/
   justify-content: center; /*alinha os intens ao centro horizontalmente*/
   align-items: center; /*alinha no centro do conteiner*/
-  /*flex-direction: column;*/
+  flex-direction: row;
   flex-wrap: wrap; /*quebra os itens deacordo com a tela*/
-  /*justify-content: space-around; /*cria espaçamentos entre os itens*/
+  /*justify-content: space-around; /*cria espaçamentos entre os itens iguais em todos os lados*/
   /*justify-content: space-between; /*deixa os itens o mais separados possível*/
-  justify-content: space-evenly; /*deixa o espaçamento iguais entre os itens*/
+  /* justify-content: space-evenly; /*deixa o espaçamento iguais entre os itens*/
   /* flex-direction: column-reverse; /*inverte os itens e a fixão*/
   /*flex-direction: row; /*padrão*/
   /*flex-direction: row-reverse; /*inverte os intens e fixão*/
   /*flex-direction: column;*/
-  row-gap: 15px; /*espaçamento entre os itens*/
+  /*row-gap: 15px; /*espaçamento entre os itens*/
   /*column-gap: 15px; /*espaçamento entre os itens em coluna*/
 }
 .item {
+  margin: 20px;
   width: 200px;
   height: 200px;
-  border: 2px solid black;
-  background-color: white;
+  border: 1px solid black;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 200px; /*tamanho basico do item*/
   flex-grow: 1; /*aumenta o tamanho dos itens sem que eles quebrem de forma imediata*/
-}
-.item1 {
-  order: 2;
   flex-shrink: 1; /*diminuição dos itens de forma igual*/
 }
-.item2 {
-  order: 3;
+
+.header {
+  flex-basis: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
 }
-.item3 {
-  order: 1;
+
+.footer {
+  flex-basis: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-widht: 610px) {
+  .iframe {
+    width: 100%;
+    height: auto;
+  }
 }
