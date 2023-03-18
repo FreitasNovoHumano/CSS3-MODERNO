@@ -1,11 +1,10 @@
 /*removendo margin e padding*/
 * {
   margin: 0;
-
+  padding: 0;
   box-sizing: border-box;
   font-size: 20px;
 }
-
 .container {
   min-height: 100vh;
   display: flex;
@@ -22,18 +21,19 @@
   min-height: 40px;
   background-color: black;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap; /*Quebra os elementos*/
+  align-items: center;
+  justify-content: space-between; /*deixa os elementos espaçado*/
   padding: 30px;
-  gap: 8px 15px; /*Quebra os elementos quandiminuir a tela*/
+  gap: 8px 15px; /*Quebra os elementos horizontalmente e verticalmente quando diminuir a tela*/
 }
 .buttons {
   display: flex;
-  gap: 10px; /*espaçamento entre os botões*/
+  gap: 15px; /*espaçamento entre os botões*/
 }
+/*Manipulando os botões*/
 .buttonHeader {
-  font-size: 20px;
+  font-size: 20lpx;
   padding: 10px 15px;
   border-radius: 10px;
   background-color: transparent;
@@ -69,7 +69,7 @@
 }
 .sidebarCardImg {
   width: 100%;
-  height: 100%;
+  /*height: 180px;*/
   border-radius: 10px;
 }
 .categoryCard {
@@ -84,10 +84,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
   grid-area: mainContent;
 }
 .categoryCard:hover {
-  border-color: black;
+  border-color: #ff0044;
 }
 .mainCategoryCardTitle {
   font-family: Arial, Helvetica, sans-serif;
@@ -95,4 +96,64 @@
 }
 .mainCategoryCardDescription {
   padding: 6px;
+}
+.sidebarContent {
+  background-color: #383838;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  grid-area: sidebarContant;
+}
+.sidebarCard {
+  width: 75%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sidebarContent {
+  background-color: #383838;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 300px;
+  grid-area: sidebarContent;
+}
+.sidebarCard:hover {
+  border-color: #ff0044;
+}
+.sidebarCardTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.logoFooter {
+  width: 180px;
+}
+.footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+}
+.backToTop {
+  color: white;
+}
+.footerAnchor {
+  text-decoration: none;
+}
+.footerAnchor:hover {
+  color: #ff0044;
+  text-decoration: none;
 }
