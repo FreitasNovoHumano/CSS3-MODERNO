@@ -9,7 +9,10 @@
   display: grid;
   /*grid-template-columns: 1fr 2fr 1fr 1fr; /*definição de colunas*/
   grid-template-columns: repeat(3, 1fr); /*quantidades de colunas*/
-  grid-auto-rows: minmax(110px, auto);
+  grid-auto-rows: minmax(
+    110px,
+    auto
+  ); /*110 minim, auto de altura se adapta a tela*/
   gap: 10px 15px; /*espaçamento entre linhas e colunas*/
 }
 .item {
