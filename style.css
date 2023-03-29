@@ -1,3 +1,20 @@
+.w3-button {
+  gap: 15px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: indigo;
+  border-color: white;
+  color: blue;
+  cursor: pointer;
+  transition: 0.4s;
+  text-decoration: underline;
+}
+.w3-button:hover {
+  text-decoration: none;
+}
+
 .img-content {
   width: 765px;
   height: 400px;
